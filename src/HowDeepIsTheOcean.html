@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Que tan profundo es el oceano / Blog</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
+  </head>
+  
+  <body>
+    
+    <!-----------------Navbar---------------------------->
+    
+    <nav class="navbar has-background-light" role="navigation" aria-label="main navigation">      
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-start" style="flex-grow:1; justify-content:center;">
+            <a class="navbar-item has-background-grey-dark has-text-light">
+              Blog
+            </a>
+      
+            <a class="navbar-item">
+              Acerca de
+            </a>
+
+            <a class="navbar-item">
+                Contacto
+            </a>
+          </div>
+          
+        </div>
+      </nav>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+          // Get all "navbar-burger" elements
+          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+          // Check if there are any navbar burgers
+          if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+              el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+              });
+            });
+          }
+
+          });
+
+      </script>
+
+    <!-----------titulo-------->
+    <section class="hero is-medium is-bold imagen-portada" style="background-image:url('img/piano.jpg');">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title has-text-white is-italic">
+              ¿Qué tan profundo es el oceano?
+            </h1>
+            <h2 class="subtitle has-text-white is-italic">
+              Blog de música
+            </h2>
+          </div>
+        </div>
+    </section>
+
+
+   <!--------------------Seccion de articulos--------->
+<section class="section">   
+  <div class="container">
+      <div class="columns">
+      <div class="column has-background-white is-8 is-offset-2">
+        <div class="column is-8 is-offset-2">
+          <a href="#">
+          <figure class="image" style="margin-top: 5%;">
+              <img src="img/bill-evans.jpg" alt="Bill-evans">
+          </figure>
+          <h1 class="title is-4 margen">Laurie analisis</h1>
+          <p class="margen"> Analisis de laurie, todas sus caracteristicas, armonia, melodia, acordes, improvisación. </p>
+          </a> 
+          <br> 
+
+          <p class="vistas">Vistas:</p>
+
+        </div>
+      </div>
+      </div>
+  </div>  
+</section>
+
+<!-------------Footer----------------------->
+<footer class="footer" id="has-background-orange">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <label class="label is-size-4 has-text-weight-medium has-text-light">Recibe las últimas noticias</label>
+        <div class="field is-grouped">
+          <p class="control is-expanded has-icons-left">
+            <input class="input" type="email" placeholder="Email">
+            <span class="icon is-small is-left">
+              <i class="zmdi zmdi-email"></i>
+            </span>
+          </p>
+          <p class="control">
+            <a class="button is-primary">
+              Suscríbete
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+
+  </body>
+</html>

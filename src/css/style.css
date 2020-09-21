@@ -1,0 +1,40 @@
+.imagen-portada{
+        background-size: cover;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#has-background-orange{
+    background-color: #db5b43;
+}
+
+.margen:hover{
+    color:#db5b43;
+
+}
+
+h1.margen{
+    padding-top: 5%;
+}
+
+p.margen{
+    color: grey;
+}
+
+.vistas{
+    color: grey;
+    border-top: solid 1px grey; 
+    margin-top: 3%;
+    padding-top: 2%;
+}
+
+.justifycenter{
+    flex-grow:1;
+    justify-content: center;
+}
+
+.image{
+    margin-top: 5%;
+}
